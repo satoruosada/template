@@ -1,0 +1,18 @@
+@media screen and (max-width:780px) {
+    
+}
+@media screen and (max-width:800px) {
+    
+    .houses {
+
+        margin-top: 60px;
+
+        &__inner {
+            flex-direction: column;
+        }
+
+        &__item {
+            width: 100%;
+        }
+    }
+}

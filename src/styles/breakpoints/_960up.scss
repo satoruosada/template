@@ -1,0 +1,15 @@
+@media  screen and (max-width:960px) {
+
+  .mobile-menu {
+    &__btn {
+        display: block;
+    }
+  }
+
+  .header {
+      &__nav {
+          display: none;
+      }
+  }
+}
+

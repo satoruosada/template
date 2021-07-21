@@ -1,0 +1,123 @@
+body {
+    font-family: "Kameron", "Noto Sans JP", sans-serif;
+  }
+  img {
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+  .font-sm {
+    font-size: 14px;
+  }
+  .font-md {
+    font-size: 17px;
+  }
+  .font-lr {
+    font-size: 25px;
+  }
+  .font-lg {
+    font-size: 36px;
+  }
+  .mb-sm {
+    margin-bottom: 16px !important;
+  }
+  .mb-lg {
+    margin-bottom: -55px !important;
+  }
+  .pt-lg {
+    padding-top: 170px;
+  }
+  .pb-sm {
+    padding-bottom: 16px;
+  }
+  .pb-lg {
+    padding-bottom: 80px !important;
+  }
+  .content-width {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1100px;
+  }
+  .main-title {
+    @extend .font-lg;
+    font-weight: 600;
+    margin-bottom: 0;
+    display: block;
+  }
+  .sub-title {
+    @extend .font-sm;
+    color: $cSubTitle;
+  }
+
+  #global-container {
+      overflow: hidden;
+  }
+
+  .mobile-menu {
+      &__btn {
+          display: none;
+      }
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $navHeight;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+  
+    &.triggered {
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 10px 0 25px -10px rgba(0, 0, 0, 0.5);
+    }
+
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @extend .content-width;
+    }
+  
+    &__ul {
+      display: flex;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+  
+    &__li {
+      margin-left: 20px;
+  
+      & > a {
+        color: $cBlack;
+        text-decoration: none !important;
+        text-transform: uppercase;
+      }
+    }
+  
+    & .logo {
+      font-size: 38px;
+      justify-content: center;
+    }
+  
+  }
+
+  .houses {
+
+    @extend .content-width;
+
+    &__inner {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__item {
+        width: 47%;
+    }
+  }
